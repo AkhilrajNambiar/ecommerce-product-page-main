@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { useState } from "react/cjs/react.development";
+import Home from "./components/Home";
+import ItemInCart from "./components/ItemInCart";
+import Navbar from "./components/Navbar";
+import sneakers from "./images/image-product-1-thumbnail.jpg"
 
 function App() {
+  const [ itemCount, setItemCount ] = useState(1);
+  const [ cartItems, setCartItems ] = useState(null);
+  const [ checkedCart, setCartChecked ] = useState(false);
+  
+  window.addEventListener("resize", () => {
+    console.log(window.innerWidth);
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Navbar cartItems={cartItems} setCartItems={ setCartItems } 
+       checkedCart={checkedCart} setCartChecked={setCartChecked} />
+       <Home count={ itemCount } setItemCount={setItemCount} cartItems={cartItems} setCartItems={ setCartItems } checkedCart={checkedCart} setCartChecked={setCartChecked} />
     </div>
   );
 }
