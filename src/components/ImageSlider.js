@@ -1,7 +1,7 @@
 import ItemImages from "./ItemImages";
 import firstImage from "../images/image-product-1.jpg";
 import closeSlider from "../images/icon-close.svg";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 const ImageSlider = (props) => {
 
