@@ -110,13 +110,13 @@ const Home = (props) => {
                 <div className="count-and-add-to-cart">
                     <div className="edit-count-box">
                         <div className="decrease-count" onClick={ decreaseItemCount }>
-                            <img src={ decreaseCount }></img>
+                            <img src={ decreaseCount } alt="Decrease count"></img>
                         </div>
                         <div className="count">
                             { itemCount }
                         </div>
                         <div className="increase-count" onClick={ increaseItemCount }>
-                            <img src={ increaseCount }></img>
+                            <img src={ increaseCount } alt="Increase count"></img>
                         </div>
                     </div>
                     <div className="add-to-cart" onClick={ addToCart }>
