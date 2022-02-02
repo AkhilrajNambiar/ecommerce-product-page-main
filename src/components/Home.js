@@ -3,7 +3,7 @@ import ItemImages from "./ItemImages";
 import increaseCount from "../images/icon-plus.svg";
 import decreaseCount from "../images/icon-minus.svg";
 import cart from "../images/icon-cart.svg";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import ImageSlider from "./ImageSlider";
 
 const Home = (props) => {

@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import Home from "./components/Home";
 import ItemInCart from "./components/ItemInCart";
 import Navbar from "./components/Navbar";
